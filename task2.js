@@ -1,11 +1,11 @@
-function grid(N) {
-  if (N < 0) return null;
+function grid(numbers) {
+  if (numbers < 0) return null;
 
   const grid = [];
 
-  for (let i = 0; i < N; i++) {
+  for (let i = 0; i < numbers; i++) {
     const row = [];
-    for (let j = 0; j < N; j++)
+    for (let j = 0; j < numbers; j++)
       row.push(String.fromCharCode(97 + ((i + j) % 26)));
     grid.push(row.join(" "));
   }
