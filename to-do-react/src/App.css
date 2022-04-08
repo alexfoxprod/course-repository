@@ -1,0 +1,123 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background-color: rgb(10, 25, 41);
+}
+
+.container {
+  text-align: center;
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input {
+  color: #fff !important;
+}
+
+.search-field {
+  margin-bottom: 20px;
+}
+
+.adding-form {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.adding-form label {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.name-input {
+  margin-right: 15px !important;
+}
+
+.book-card {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.action-row {
+  position: absolute;
+  bottom: 0;
+}
+
+.title-name {
+  font-size: 5rem;
+  font-family: "Grape Nuts", cursive;
+  font-weight: bold;
+  color: #fff;
+}
+
+.book-list {
+  width: 100%;
+}
+
+.book-list ul {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.list-group .list-group-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  background-color: rgb(0, 30, 60);
+}
+
+.list-group-item .btn-danger {
+  position: absolute;
+  right: 5px;
+}
+
+.list-group-item .book-id {
+  position: absolute;
+  left: 10px;
+}
+
+.list-group-item .form-check-input {
+  position: absolute;
+  right: 0;
+}
+
+.book-title.isRead {
+  text-decoration: line-through;
+  color: rgb(102, 178, 255);
+}
+
+.books-status {
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.books-status span {
+  margin-left: 5px;
+}
+
+.books-status .btn-danger {
+  position: absolute;
+  right: 10px;
+}
+
+.descr {
+  padding: 0 20px;
+  text-align: center;
+  font-size: 12px;
+  background-color: rgb(102, 178, 255);
+  border-radius: 0px 0px 20px 20px;
+}
