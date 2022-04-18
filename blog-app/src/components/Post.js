@@ -11,8 +11,8 @@ function Post({ title, name, email, body }) {
   return (
     <div className="article-content">
       <div className="article-title">
-        <a href="/">{title}</a>
-        <a href="/">{name}</a>
+        <a>{title}</a>
+        <p>{name}</p>
       </div>
       <p
         className="article-text"
@@ -22,7 +22,9 @@ function Post({ title, name, email, body }) {
         {body} {email}
       </p>
       {countSum}
-      <button onClick={() => setNum(num + 1)}> +</button>
+      <button className="like-count" onClick={() => setNum(num + 1)}>
+        👍
+      </button>
     </div>
   );
 }
