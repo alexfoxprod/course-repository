@@ -81,7 +81,7 @@ function App() {
   };
 
   const handleFocus = () => {
-    ref.current.style.color = "red";
+    ref.current.style.color = "green";
   };
 
   const setType = useCallback(
@@ -96,7 +96,9 @@ function App() {
       <Header changeType={setType} check={data.check} changeTheme={change} />
       <div className="form">
         <input ref={ref} />
-        <button onClick={handleFocus}>focus</button>
+        <button className="search-btn" onClick={handleFocus}>
+          Search 🔎
+        </button>
       </div>
       <PostList posts={data.posts} />
       <Footer />
