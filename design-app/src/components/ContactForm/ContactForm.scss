@@ -1,0 +1,97 @@
+.contact__wrapper {
+  display: flex;
+  height: 700px;
+  &__info {
+    background: linear-gradient(
+        0deg,
+        rgba(0, 99, 178, 0.88),
+        rgba(0, 99, 178, 0.88)
+      ),
+      url("../../img/info-bg.png");
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .contact__info {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 60px;
+      .contact__adress,
+      .contact__email,
+      .contact__phone {
+        display: flex;
+        align-items: center;
+        font-family: "Lato";
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+      }
+      span {
+        margin-left: 50px;
+      }
+    }
+  }
+  &__form {
+    width: 50%;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    & h2 {
+      font-size: 24px;
+      font-weight: 700;
+      font-family: "Montserrat";
+      line-height: 29px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      margin-bottom: 30px;
+    }
+    & form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      input {
+        color: #504a4a;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 0.1em;
+        border: none;
+        padding: 19px 15px;
+      }
+      textarea {
+        color: #504a4a;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 0.1em;
+        padding: 19px 15px;
+      }
+      .submit-btn {
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+        font-weight: 700;
+        font-size: 0.85rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        color: #fff;
+        background: #0063b2;
+      }
+      .submit-btn:hover {
+        content: "";
+        background: #2f7ebd;
+      }
+      .form__divider {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+      }
+    }
+  }
+}
