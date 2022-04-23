@@ -1,0 +1,16 @@
+.footer_nav {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+}
+
+.footer_nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+}

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+}
+
+.banner {
+  display: flex;
+}
+
+.line__before {
+  width: 88px;
+  height: 3px;
+  background-color: #2b66fa;
+}
+
+.content {
+  padding-top: 130px;
+  position: absolute;
+  left: 100px;
+}
+
+@media (min-width: 1400px) {
+  .content {
+    padding-top: 130px;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  column-gap: 21px;
+}
+
+.header h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 34px;
+  text-align: left;
+}
+
+@media (min-width: 1400px) {
+  .heading {
+    font-weight: 600;
+    font-size: 48px;
+  }
+}
+
+.heading span {
+  color: #2b66fa;
+}
+
+.content p {
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0;
+}
+
+@media (min-width: 1400px) {
+  .content p {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+.contact__btn {
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 30px;
+  padding: 12px 31px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact__btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.contactImg {
+  margin-left: auto;
+}

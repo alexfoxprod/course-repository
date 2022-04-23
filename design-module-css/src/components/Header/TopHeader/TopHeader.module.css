@@ -1,0 +1,40 @@
+.topheader {
+  background-color: #0a0043;
+  height: 30px;
+}
+
+.topheader__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.contacts {
+  display: flex;
+  column-gap: 30px;
+}
+
+.contacts span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.whatsup,
+.viber,
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.language_flag {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}

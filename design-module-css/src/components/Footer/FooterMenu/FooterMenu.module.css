@@ -1,0 +1,143 @@
+.footer_menu {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 80px;
+}
+
+.contacts_heading h4,
+.type_heading h4,
+.follow_heading h4 {
+  text-align: left;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.contacts_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+  margin-left: 20px;
+}
+
+.contacts_list p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-align: left;
+  margin-left: 24px;
+}
+
+.phone,
+.email,
+.adress {
+  display: flex;
+}
+
+.adress p {
+  max-width: 300px;
+}
+
+.type_items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.type_items a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.rating {
+  display: flex;
+  column-gap: 20px;
+}
+
+.rating span {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.stars span {
+  color: #2b66fa !important;
+}
+
+.follow_media {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  row-gap: 37px;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.media_group {
+  display: flex;
+  column-gap: 20px;
+}
+
+.media_group p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.subscribe_title {
+  display: flex;
+  column-gap: 13px;
+  margin-top: 35px;
+  margin-left: 20px;
+}
+
+.subscribe_title p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+.subscribe_form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.subscribe_form input {
+  padding: 8px 0;
+  border: none;
+  background: #ffffff;
+  border-radius: 5px 0 0 5px;
+  padding-left: 18px;
+  flex-basis: 70%;
+  margin-left: 20px;
+}
+
+.subscribe_form button {
+  padding: 8px 10px;
+  border: none;
+  color: #fff;
+  background: linear-gradient(90deg, #0052d4 0%, #4364f7 50%, #6fb1fc 100%);
+  border-radius: 0px 5px 5px 0px;
+}
