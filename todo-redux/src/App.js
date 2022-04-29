@@ -19,7 +19,13 @@ function App() {
 
   const tasks = useSelector((state) => state.tasksList.tasks);
   return (
-    <Container style={{ background: themes.background, color: themes.color }}>
+    <Container
+      style={{
+        background: themes.background,
+        color: themes.color,
+        minHeight: "100vh",
+      }}
+    >
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Form />
@@ -30,7 +36,12 @@ function App() {
         {themes === theme.light ? (
           <>
             <Typography
-              style={{ textAlign: "center", width: "100%", cursor: "pointer" }}
+              style={{
+                textAlign: "center",
+                width: "100%",
+                cursor: "pointer",
+                fontSize: 32,
+              }}
               onClick={changeTheme}
             >
               🌕 Change theme to Dark
@@ -40,7 +51,12 @@ function App() {
         ) : (
           <>
             <Typography
-              style={{ textAlign: "center", width: "100%", cursor: "pointer" }}
+              style={{
+                textAlign: "center",
+                width: "100%",
+                cursor: "pointer",
+                fontSize: 32,
+              }}
               onClick={changeTheme}
             >
               🌑 Change theme to Light

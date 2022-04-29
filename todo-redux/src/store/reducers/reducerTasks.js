@@ -22,6 +22,7 @@ export const tasksReducer = (state = initialState, action) => {
           ? {
               ...state,
               title: action.payload.title,
+              description: action.payload.description,
             }
           : task
       );
