@@ -5,17 +5,30 @@ import { addTask } from "../store/actions/actions";
 
 export default function Form() {
   const dispatch = useDispatch();
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState({ title: "", description: "" });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setValue((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
 
   const handleAddTask = (event) => {
     event.preventDefault();
     if (!value) return;
     const newTask = {
-      title: value,
+      title: value.title,
+      description: value.description,
       id: Date.now().toString(),
     };
     dispatch(addTask(newTask));
-    setValue("");
+    setValue((prevState) => ({
+      ...prevState,
+      title: "",
+      description: "",
+    }));
   };
 
   return (
@@ -24,14 +37,24 @@ export default function Form() {
         fullWidth
         label="Task title"
         id="standart-title"
-        value={value}
-        onChange={(event) => setValue(event.target.value)}
+        value={value.title}
+        name={"title"}
+        onChange={handleChange}
+      />
+      <TextField
+        fullWidth
+        label="Task description"
+        id="standart-title"
+        value={value.description}
+        name={"description"}
+        onChange={handleChange}
       />
       <Button
         type="submit"
         color="primary"
         variant="contained"
         onClick={handleAddTask}
+        style={{ marginTop: 10 }}
       >
         Add task
       </Button>
