@@ -43,10 +43,9 @@ const App = () => {
       return q;*/
   }, [limitNumber]);
 
-  const handleEdit = async (todo, title, description) => {
+  const handleEdit = async (todo, title) => {
     await updateDoc(doc(db, "todos", todo.id), {
       title: title,
-      description: description,
     });
   };
   const toggleComplete = async (todo) => {
@@ -78,7 +77,6 @@ const App = () => {
         <button
           onClick={() => {
             setLimitNumber(limitNumber + limited);
-            console.log(limitNumber);
           }}
           style={{
             border: "none",

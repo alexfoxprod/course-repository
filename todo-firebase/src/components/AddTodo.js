@@ -4,15 +4,18 @@ import { collection, addDoc } from "firebase/firestore";
 
 export default function AddTodo() {
   const [title, setTitle] = React.useState("");
+  const [description, setDescription] = React.useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (title !== "") {
       await addDoc(collection(db, "todos"), {
         title,
+        description,
         completed: false,
       });
       setTitle("");
+      setDescription("");
     }
   };
   return (
@@ -23,6 +26,12 @@ export default function AddTodo() {
           placeholder="Enter todo..."
           value={title}
           onChange={(e) => setTitle(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Enter description"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
         />
       </div>
       <div className="btn_container">
